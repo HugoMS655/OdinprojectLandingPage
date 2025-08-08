@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../fonts/Roboto-Italic-VariableFont_wdth\wght.ttf);
+  font-style: italic;
+}
+
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+}
+
+.sign-up-content,
+.sign-up-btn {
+  background-color: #3882f6;
+}
+
+.sign-up-btn {
+  color: #f9faf8;
+  padding: 10px 28px;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 10px;
+  border: none;
+}
+
+.sign-up-text {
+  color: #f9faf8;
+}
+
+.btn-with-border {
+  border: 2px solid #f9faf8;
+}
+
+.inspiring-quote {
+  background-color: #e5e7eb;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-family: Roboto-Italic;
+  font-style: light italic;
+  color: #1f2937;
+}
+
+.quote-author {
+  font-weight: 900;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+.header-links,
+.header-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.main-title,
+.header-logo {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.cards-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+header,
+footer,
+.header,
+.header-content,
+.header-links,
+.cards-container,
+.cards,
+.sign-up,
+.sign-up-content,
+.inspiring-quote,
+.quote {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-text,
+.cards-container,
+.sign-up-text,
+.inspiring-quote {
+  flex-direction: column;
+}
+
+.sign-up,
+.header {
+  justify-content: space-between;
+}
+
+.cards-container,
+.inspiring-quote,
+.sign-up,
+footer {
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up h3 {
+  font-size: 24px;
+}
+
+.sign-up p {
+  font-size: 18px;
+}
