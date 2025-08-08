@@ -16,6 +16,8 @@
   --light-grey-color: #e5e7eb;
   --dark-blue-color: #1f2937;
   --custom-white: #f9faf8;
+  margin: 0px;
+  padding: 0px;
 }
 
 header,
@@ -30,8 +32,6 @@ footer,
 .inspiring-quote,
 .quote {
   display: flex;
-  margin: 0px;
-  padding: 0px;
 }
 
 .header-text,
@@ -48,6 +48,10 @@ footer,
 }
 
 /*TODO after images are added , its probably needed to styles the img too*/
+.card-img {
+  border: 2px solid var(--light-blue-color);
+  border-radius: 10px;
+}
 
 /*TODO check if padding is needed later */
 .cards {
@@ -79,7 +83,7 @@ footer {
 
 .sign-up-content,
 .sign-up-btn {
-  background-color: #3882f6;
+  background-color: var(--light-blue-color);
 }
 
 .sign-up-btn {
@@ -149,8 +153,4 @@ footer {
 
 .sign-up p {
   font-size: 18px;
-}
-
-.card-img {
-  border: 2px solid var(--light-blue-color);
 }
