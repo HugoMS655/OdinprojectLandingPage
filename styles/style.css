@@ -22,29 +22,108 @@
 
 header,
 footer,
-.header,
-.header-content,
+main,
+.header-left,
+.header-right,
 .header-links,
-.cards-container,
 .cards,
+.card,
 .sign-up,
 .sign-up-content,
-.inspiring-quote,
 .quote {
   display: flex;
 }
 
-.header-text,
-.cards-container,
-.card .sign-up-text,
-.inspiring-quote {
+header,
+footer,
+main {
+  flex: 1;
+}
+
+main,
+footer,
+.header-left,
+.header-right,
+.quote,
+.card {
   flex-direction: column;
+}
+
+footer {
+  color: var(--custom-white);
+  align-self: flex-end;
+  padding: 20px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+footer {
+  background-color: var(--dark-blue-color);
+}
+
+header {
+  justify-content: space-around;
+  /* gap: 100px; */
+}
+
+.header-left,
+.header-right {
+  align-items: space-between;
+  /*  gap: 100px; */
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.header-text p {
+  font-size: 18px;
+  color: var(--light-grey-color);
+}
+
+.header-links {
+  gap: 20px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-grey-color);
+}
+
+.main-title,
+.header-logo {
+  font-size: 48px;
+  color: var(--custom-white);
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.cards-container {
+  /* padding: 30px; */
+  justify-content: center;
+}
+
+/*TODO check if padding is needed later */
+.cards {
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cards-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--dark-blue-color);
 }
 
 .card {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
 /*TODO after images are added , its probably needed to styles the img too*/
@@ -53,37 +132,22 @@ footer,
   border-radius: 10px;
 }
 
-/*TODO check if padding is needed later */
-.cards {
-  gap: 20px;
-}
-
-.sign-up,
-.header,
-.cards {
-  justify-content: space-between;
-}
-
-.cards-container,
-.inspiring-quote,
-.sign-up,
-footer {
+.sign-up {
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  color: var(--custom-white);
-}
-
-header,
-footer {
-  background-color: var(--dark-blue-color);
+  padding: 50px;
 }
 
 .sign-up-content,
 .sign-up-btn {
   background-color: var(--light-blue-color);
+}
+
+.sign-up-content {
+  padding: 40px 130px;
+  gap: 40px;
+  border-radius: 10px;
+  justify-content: space-around;
 }
 
 .sign-up-btn {
@@ -99,12 +163,27 @@ footer {
   color: var(--custom-white);
 }
 
+.sign-up h3 {
+  font-size: 24px;
+}
+
+.sign-up p {
+  font-size: 18px;
+}
+
 .btn-with-border {
   border: 2px solid var(--custom-white);
 }
 
 .inspiring-quote {
   background-color: var(--light-grey-color);
+  /* padding: 50px 100px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  flex-wrap: wrap;
 }
 
 .quote-text {
@@ -118,39 +197,4 @@ footer {
   font-weight: 900;
   color: #1f2937;
   font-size: 28px;
-}
-
-.header-links,
-.header-text p {
-  font-size: 18px;
-  color: var(--light-grey-color);
-}
-
-.header-links {
-  text-decoration: none;
-}
-
-.main-title,
-.header-logo {
-  font-size: 48px;
-  color: var(--custom-white);
-}
-
-.header-logo {
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.cards-title {
-  font-size: 36px;
-  font-weight: 900;
-  color: var(--dark-blue-color);
-}
-
-.sign-up h3 {
-  font-size: 24px;
-}
-
-.sign-up p {
-  font-size: 18px;
 }
