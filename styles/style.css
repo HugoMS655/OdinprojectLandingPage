@@ -20,181 +20,204 @@
   padding: 0px;
 }
 
-header,
-footer,
-main,
-.header-left,
-.header-right,
-.header-links,
-.cards,
-.card,
-.sign-up,
-.sign-up-content,
-.quote {
-  display: flex;
-}
-
-header,
-footer,
-main {
-  flex: 1;
-}
-
-main,
-footer,
-.header-left,
-.header-right,
-.quote,
-.card {
-  flex-direction: column;
-}
-
-footer {
-  color: var(--custom-white);
-  align-self: flex-end;
-  padding: 20px;
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
-}
-
-header,
-footer {
-  background-color: var(--dark-blue-color);
-}
+/*HEADER DIVISION*/
 
 header {
+  display: flex;
+  background-color: var(--dark-blue-color);
   justify-content: space-around;
-  /* gap: 100px; */
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
-.header-left,
-.header-right {
-  align-items: space-between;
-  /*  gap: 100px; */
-  padding-top: 20px;
-  padding-bottom: 100px;
+.hleft,
+.hright {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 50px;
+}
+
+/*HEADER LEFT SIDE*/
+
+.header-logo {
+  font-size: 24px;
+  color: var(--custom-white);
+  font-weight: 900;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  color: var(--custom-white);
+  font-weight: 900;
 }
 
 .header-text p {
-  font-size: 18px;
   color: var(--light-grey-color);
+  font-size: 18px;
 }
 
-.header-links {
-  gap: 20px;
+.header-btn {
+  background-color: var(--light-blue-color);
+  color: var(--custom-white);
   font-size: 18px;
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+/*HEADER RIGHT SIDE*/
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 a {
   text-decoration: none;
   color: var(--light-grey-color);
+  font-size: 18px;
 }
 
-.main-title,
-.header-logo {
-  font-size: 48px;
-  color: var(--custom-white);
+.hright img {
 }
 
-.header-logo {
-  font-size: 24px;
-  font-weight: 900;
-}
+/*CARDS CONTAINER*/
 
 .cards-container {
-  /* padding: 30px; */
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
 }
 
-/*TODO check if padding is needed later */
-.cards {
-  /* gap: 20px; */
+.cards-container h2 {
+  font-size: 36px;
+  color: var(--dark-blue-color);
+  font-weight: 900;
+}
+
+.cards-content {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-.cards-title {
-  font-size: 36px;
-  font-weight: 900;
-  color: var(--dark-blue-color);
+  align-items: center;
+  gap: 20px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card p {
+  color: var(--dark-blue-color);
+  font-size: 18px;
+}
+
+.card img {
+  border: 2px solid var(--light-blue-color);
+  border-radius: 5px;
+}
+
+/*QUOTE CONTAINER*/
+
+.quote-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--light-grey-color);
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 5px;
 }
 
-/*TODO after images are added , its probably needed to styles the img too*/
-.card-img {
-  border: 2px solid var(--light-blue-color);
-  border-radius: 10px;
-}
-
-.sign-up {
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-}
-
-.sign-up-content,
-.sign-up-btn {
-  background-color: var(--light-blue-color);
-}
-
-.sign-up-content {
-  padding: 40px 130px;
-  gap: 40px;
-  border-radius: 10px;
-  justify-content: space-around;
-}
-
-.sign-up-btn {
-  color: var(--custom-white);
-  padding: 10px 28px;
-  font-size: 18px;
-  font-weight: 900;
-  border-radius: 10px;
-  border: none;
-}
-
-.sign-up-text {
-  color: var(--custom-white);
-}
-
-.sign-up h3 {
-  font-size: 24px;
-}
-
-.sign-up p {
-  font-size: 18px;
-}
-
-.btn-with-border {
-  border: 2px solid var(--custom-white);
-}
-
-.inspiring-quote {
-  background-color: var(--light-grey-color);
-  /* padding: 50px 100px; */
-  justify-content: center;
-  align-items: center;
-}
-
-.quote {
-  flex-wrap: wrap;
+.quote p {
+  color: var(--dark-blue-color);
 }
 
 .quote-text {
   font-size: 36px;
-  font-family: Roboto-Italic;
   font-style: light italic;
-  color: #1f2937;
 }
 
 .quote-author {
   font-weight: 900;
-  color: #1f2937;
-  font-size: 28px;
+  font-size: 20px;
+  align-self: flex-end;
+}
+
+/*SIGN UP CONTAINER*/
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  background-color: var(--light-blue-color);
+  border-radius: 5px;
+  padding: 20px 100px;
+}
+
+.signup-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--custom-white);
+}
+
+.signup-text h3 {
+  color: var(--custom-white);
+  font-size: 20px;
+}
+
+.signup-text p {
+  color: var(--light-grey-color);
+  font-size: 18px;
+}
+
+.signup-btn {
+  background-color: var(--light-blue-color);
+  color: var(--custom-white);
+  font-size: 18px;
+  font-weight: 900;
+  border: 2px solid var(--custom-white);
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--light-grey-color);
+  background-color: var(--dark-blue-color);
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
