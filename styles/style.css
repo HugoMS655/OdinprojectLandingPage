@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
-  font-family: Roboto-Italic;
+  font-family: "Roboto-Italic";
   src: url(../fonts/Roboto-Italic-VariableFont_wdth\wght.ttf);
   font-style: italic;
 }
@@ -25,17 +25,21 @@
 header {
   display: flex;
   background-color: var(--dark-blue-color);
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .hleft,
 .hright {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  gap: 50px;
+  width: 350px;
+  height: 300px;
+}
+
+.hright {
+  width: 400px;
 }
 
 /*HEADER LEFT SIDE*/
@@ -49,7 +53,7 @@ header {
 .header-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: flex-start;
 }
 
@@ -80,7 +84,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 8px;
 }
 
 a {
@@ -99,7 +103,9 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  gap: 50px;
 }
 
 .cards-container h2 {
@@ -120,6 +126,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 200px;
 }
 
 .card p {
@@ -140,13 +147,14 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--light-grey-color);
+  padding: 100px;
 }
 
 .quote {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 5px;
+  width: 800px;
 }
 
 .quote p {
@@ -154,6 +162,7 @@ a {
 }
 
 .quote-text {
+  font-family: Roboto-Italic;
   font-size: 36px;
   font-style: light italic;
 }
@@ -170,6 +179,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px;
 }
 
 .signup {
@@ -218,6 +228,6 @@ footer {
   font-size: 18px;
   color: var(--light-grey-color);
   background-color: var(--dark-blue-color);
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
