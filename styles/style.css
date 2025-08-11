@@ -25,21 +25,27 @@
 header {
   display: flex;
   background-color: var(--dark-blue-color);
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 100px;
+  gap: 100px;
 }
 
 .hleft,
 .hright {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 300px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .hright {
-  width: 400px;
+  flex: 1 1 auto;
+  max-width: 600px;
+}
+.hleft {
+  flex: 1 1 auto;
+  max-width: 500px;
 }
 
 /*HEADER LEFT SIDE*/
@@ -54,7 +60,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: flex-start;
 }
 
 .header-text h1 {
@@ -76,15 +81,16 @@ header {
   border: none;
   border-radius: 5px;
   padding: 8px 25px;
+  align-self: flex-start;
 }
 
 /*HEADER RIGHT SIDE*/
 
 .header-links {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
+  align-self: flex-end;
 }
 
 a {
@@ -93,7 +99,16 @@ a {
   font-size: 18px;
 }
 
-.hright img {
+.header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  background-color: grey;
+  height: 200px;
+  width: 600px;
+  font-size: 18px;
+  color: var(--light-grey-color);
 }
 
 /*CARDS CONTAINER*/
@@ -119,24 +134,27 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
+  max-width: 200px;
 }
 
 .card p {
   color: var(--dark-blue-color);
   font-size: 18px;
+  text-align: center;
 }
 
-.card img {
-  border: 2px solid var(--light-blue-color);
-  border-radius: 5px;
+.card-img {
+  border: 5px solid var(--light-blue-color);
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
 }
 
 /*QUOTE CONTAINER*/
@@ -177,6 +195,7 @@ a {
 
 .signup-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 100px;
