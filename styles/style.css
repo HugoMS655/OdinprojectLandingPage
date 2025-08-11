@@ -1,16 +1,20 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf");
+  font-family: "roboto";
+  src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Roboto-Italic";
-  src: url(../fonts/Roboto-Italic-VariableFont_wdth\wght.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Italic-VariableFont_wdth\wght.ttf) format("truetype");
   font-style: italic;
+  font-weight: light;
 }
 
 * {
-  font-family: Roboto;
+  font-family: roboto;
+  font-style: normal;
   box-sizing: border-box;
   --light-blue-color: #3882f6;
   --light-grey-color: #e5e7eb;
@@ -36,16 +40,16 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 
 .hright {
   flex: 1 1 auto;
-  max-width: 600px;
+  max-width: 500px;
 }
 .hleft {
   flex: 1 1 auto;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 /*HEADER LEFT SIDE*/
@@ -180,9 +184,8 @@ a {
 }
 
 .quote-text {
-  font-family: Roboto-Italic;
   font-size: 36px;
-  font-style: light italic;
+  font-style: italic;
 }
 
 .quote-author {
